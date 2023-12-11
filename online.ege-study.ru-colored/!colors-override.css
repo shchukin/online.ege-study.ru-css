@@ -1,98 +1,95 @@
 :root {
-    /*
-     * Цвета из бутстрапа, но перебивать их не получится, так как Rukada потом их снова перебивает.
-     * Например на теге <body>, на заголовках <h1>, <h2>, ..., <h6> висит захардкоженный цвет
-     * вместо --primary из бутстрапа. Но может какие-то перебить удастся.
-     */
-    /*--blue: #007bff;*/
-    /*--indigo: #6610f2;*/
-    /*--purple: #6f42c1;*/
-    /*--pink: #e83e8c;*/
-    /*--red: #dc3545;*/
-    /*--orange: #fd7e14;*/
-    /*--yellow: #ffc107;*/
-    /*--green: #28a745;*/
-    /*--teal: #20c997;*/
-    /*--cyan: #17a2b8;*/
-    /*--white: #fff;*/
-    /*--gray: #6c757d;*/
-    /*--gray-dark: #343a40;*/
-    /*--primary: #007bff;*/
-    /*--secondary: #6c757d;*/
-    /*--success: #28a745;*/
-    /*--info: #17a2b8;*/
-    /*--warning: #ffc107;*/
-    /*--danger: #dc3545;*/
-    /*--light: #f8f9fa;*/
-    /*--dark: #343a40;*/
-    /*--breakpoint-xs: 0;*/
-    /*--breakpoint-sm: 576px;*/
-    /*--breakpoint-md: 768px;*/
-    /*--breakpoint-lg: 992px;*/
-    /*--breakpoint-xl: 1200px;*/
-    /*--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
-    /*--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;*/
+    --primary: #201D1B;
+    --accent: #7E8B2E;
+    --accent-light: #F1F2DF;
+    --accent-link: #FC5E38;
+    --secondary-4: #CBC0B4;
+    --secondary-3: #E0D8D0;
+    --secondary-2: #EFEAE5;
+    --secondary-1-bg: #F6F4F2;
+    --accent-2: #FFF5E7;
+    --divider-color: #EFEAE5;
+    --text-secondary: #968779;
+    --text-secondary-2: #C7BBB0;
+    --text-secondary-3: #E0D8D0;
 
-    /* Наши цвета из фигмы */
-    --figma-primary: #201D1B; /* Чёрный цвет текста */
-    --figma-secondary: #968779; /* Серый цвет текста */
-    --figma-accent-and-link: #FC5E38;
-    --figma-secondary-1: #F6F4F2;
-    --figma-divider-color: #EFEAE5;
 }
 
-/* Перебиваем цвета из Rukada */
 body {
-    background-color: var(--figma-secondary-1);
-    color: var(--figma-primary);
+    background-color: var(--secondary-1-bg);
+    color: var(--primary);
 }
 
-a {
-    color: var(--figma-accent-and-link);
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
 }
 
-a:hover {
-    color: var(--figma-primary);
+/* User area */
+.right-nav-link a.nav-link {
+    color: var(--primary);
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6  {
-    color: var(--figma-primary);
+.user-details .media .media-body .user-title {
+    color: var(--primary);
 }
 
-.text-secondary {
-    color: var(--figma-secondary) !important;
-}
-
-
-.text-primary {
-    color: var(--figma-accent-and-link) !important;
-}
-
-.bg-primary {
-    background-color: var(--figma-accent-and-link) !important;
+.user-details .media .media-body .user-subtitle {
+    color: var(--primary);
 }
 
 
-.nav-tabs .nav-link {
-    color: var(--figma-secondary);
+.dropdown-divider {
+    border-color: var(--divider-color);
 }
 
-.nav-tabs-primary.nav-tabs {
-    border-bottom-color: var(--figma-divider-color);
+.dropdown-menu a {
+    color: var(--accent-link);
 }
 
-.nav-tabs-primary .nav-link.active, .nav-tabs-primary .nav-item.show > .nav-link {
-    color: var(--figma-accent-and-link);
-    border-color: var(--figma-accent-and-link) var(--figma-accent-and-link) #FFFFFF;
-    border-bottom-color: var(--figma-accent-and-link);
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--accent-link);
+    background-color: var(--secondary-1-bg);
 }
 
 
-.card {
-    border-radius: 0.75rem;
+/* Sidebar handler */
+
+.toggle-menu i {
+    color: var(--primary);
 }
 
-.card-header {
-    border-bottom-color: var(--figma-divider-color);
-    color: var(--figma-primary);
+
+/* Sidebar */
+
+.sidebar-header {
+    color: #CDC6BF;
 }
+
+.sidebar-menu > li:hover > a, .sidebar-menu > li.active > a {
+    border-left-color: var(--accent-link);
+    background-color: var(--secondary-1-bg);
+    color: var(--primary);
+}
+
+.sidebar-menu > li > a > .fa {
+    color: var(--secondary-4);
+}
+
+.brand-logo {
+    border-bottom-color: var(--secondary-1-bg);
+}
+
+
+/* Breadcrumbs */
+
+.breadcrumb a {
+    color: var(--accent-link);
+}
+
+/* bugfixes */
+
+.dropdown-menu li {
+    cursor: pointer;
+}
+
+/* Логотип замылен и слишком большой */
