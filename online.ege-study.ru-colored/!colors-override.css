@@ -12,7 +12,7 @@
     --text-secondary: #968779;
     --text-secondary-2: #C7BBB0;
     --text-secondary-3: #E0D8D0;
-
+    --shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.04);
 }
 
 body {
@@ -24,7 +24,17 @@ body {
     color: var(--primary);
 }
 
-/* User area */
+/* Header */
+
+.toggle-menu i {
+    color: var(--primary);
+}
+
+.topbar-nav .navbar {
+    box-shadow: var(--shadow);
+}
+
+/* User */
 .right-nav-link a.nav-link {
     color: var(--primary);
 }
@@ -52,14 +62,11 @@ body {
 }
 
 
-/* Sidebar handler */
-
-.toggle-menu i {
-    color: var(--primary);
-}
-
-
 /* Sidebar */
+
+#sidebar-wrapper {
+    box-shadow: var(--shadow);
+}
 
 .sidebar-header {
     color: #CDC6BF;
@@ -93,3 +100,4 @@ body {
 }
 
 /* Логотип замылен и слишком большой */
+/* Наведения на бургер, пользователя */
