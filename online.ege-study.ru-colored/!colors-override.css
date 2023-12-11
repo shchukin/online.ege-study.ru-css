@@ -80,6 +80,10 @@ body {
 
 /* Sidebar */
 
+.brand-logo {
+    border-bottom-color: var(--secondary-1-bg);
+}
+
 #sidebar-wrapper {
     box-shadow: var(--shadow);
 }
@@ -98,8 +102,8 @@ body {
     color: var(--secondary-4);
 }
 
-.brand-logo {
-    border-bottom-color: var(--secondary-1-bg);
+.sidebar-menu > li > a {
+    color: var(--primary);
 }
 
 
