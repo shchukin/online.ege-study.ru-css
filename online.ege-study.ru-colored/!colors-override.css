@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Manrope:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
 :root {
     --primary: #201D1B;
     --accent: #7E8B2E;
@@ -17,11 +19,69 @@
 
 body {
     background-color: var(--secondary-1-bg);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
     color: var(--primary);
+    letter-spacing: 0.01em;
+}
+
+input,
+button {
+    font-weight: inherit;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
+}
+
+.btn-primary {
+    background-color: var(--accent-link);
+    border-color: var(--accent-link);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+}
+
+.btn-outline-primary {
+    border-color: var(--accent-link);
+    color: var(--accent-link)
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+}
+
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+}
+
+/* Table */
+.table td, .table th {
+    border-color: var(--divider-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--secondary-1-bg);
 }
 
 /* Card */
@@ -52,6 +112,13 @@ body {
     color: var(--accent-link);
 }
 
+.breadcrumb-item.active {
+    color: var(--text-secondary);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--text-secondary);
+}
 
 /* Header */
 
