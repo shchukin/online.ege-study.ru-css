@@ -40,6 +40,27 @@ button {
     color: var(--primary);
 }
 
+
+
+.error {
+    color: var(--danger);
+}
+
+
+.bg-primary {
+    background-color: var(--accent-link);
+}
+
+.bg-success {
+    background-color: var(--success);
+}
+
+.bg-danger {
+    background-color: var(--danger);
+}
+
+
+
 .badge-primary {
     background-color: var(--accent-link);
 }
@@ -172,6 +193,7 @@ button {
 }
 
 
+
 .btn-danger {
     color: #fff;
     background-color: var(--danger);
@@ -229,7 +251,14 @@ button {
     color: #FFFFFF;
 }
 
+
+
+
 /* Table */
+.table thead th {
+    border-color: var(--divider-color);
+}
+
 .table td, .table th {
     border-color: var(--divider-color);
 }
@@ -238,11 +267,13 @@ button {
     background-color: var(--secondary-1-bg);
 }
 
+
 /* Card */
 .card {
     box-shadow: var(--shadow);
     border-radius: 12px;
 }
+
 
 /* Dropdown */
 
