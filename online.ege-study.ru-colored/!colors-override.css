@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Manrope:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
 
 :root {
+    /* Figma */
     --primary: #201D1B;
     --accent: #7E8B2E;
     --accent-light: #F1F2DF;
@@ -15,6 +16,10 @@
     --text-secondary-2: #C7BBB0;
     --text-secondary-3: #E0D8D0;
     --shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.04);
+
+    /* Own */
+    --success: var(--accent);
+    --danger: #FF7E47;
 }
 
 body {
@@ -203,6 +208,28 @@ button {
     color: var(--primary);
 }
 
+
+.lobibox-notify.lobibox-notify-error {
+    border-color: var(--danger);
+    background-color: var(--danger);
+    color: #FFF
+}
+
+.lobibox-notify.lobibox-notify-error:hover {
+    background-color: var(--danger);
+    border-color: #FFF
+}
+
+.lobibox-notify.lobibox-notify-success {
+    border-color: var(--success);
+    background-color: var(--success);
+    color: #FFF
+}
+
+.lobibox-notify.lobibox-notify-success:hover {
+    background-color: var(--success);
+    border-color: #FFF
+}
 
 /* Footer */
 
