@@ -19,7 +19,7 @@
 
     /* Own */
     --success: var(--accent);
-    --danger: #FF7E47;
+    --danger: var(--accent-link);
 }
 
 body {
@@ -38,6 +38,15 @@ button {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
+}
+
+
+.badge-success {
+    background-color: var(--success);
+}
+
+.badge-danger {
+    background-color: var(--danger);
 }
 
 
