@@ -54,11 +54,12 @@ button {
 /*    box-shadow: none;*/
 /*}*/
 
-/*.btn-primary.disabled, .btn-primary:disabled {*/
-/*    color: #fff;*/
-/*    background-color: #5365ce;*/
-/*    border-color: #5365ce*/
-/*}*/
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: var(--secondary-2);
+    border-color: var(--secondary-2);
+    color: #FFFFFF;
+    cursor: default;
+}
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
     background-color: var(--primary);
@@ -88,10 +89,12 @@ button {
     color: #FFFFFF;
 }
 
-/*.btn-outline-primary.disabled, .btn-outline-primary:disabled {*/
-/*    color: #5e72e4;*/
-/*    background-color: transparent*/
-/*}*/
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    background-color: var(--secondary-2);
+    border-color: var(--secondary-2);
+    color: #FFFFFF;
+    cursor: default;
+}
 
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
     background-color: var(--primary);
