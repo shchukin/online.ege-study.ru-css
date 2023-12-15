@@ -40,6 +40,9 @@ button {
     color: var(--primary);
 }
 
+.badge-primary {
+    background-color: var(--accent-link);
+}
 
 .badge-success {
     background-color: var(--success);
