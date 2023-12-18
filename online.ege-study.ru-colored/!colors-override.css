@@ -23,6 +23,16 @@
     --focus-ring: rgba(252, 94, 56, 0.5);
 }
 
+
+/* bugfixes */
+
+.dropdown-menu li {
+    cursor: pointer;
+}
+
+
+/* colors */
+
 body {
     background-color: var(--secondary-1-bg);
     font-family: 'Manrope', sans-serif;
@@ -433,8 +443,19 @@ hr {
     border-color: var(--divider-color)
 }
 
-/* bugfixes */
 
-.dropdown-menu li {
-    cursor: pointer;
+/* Forms */
+.form-control {
+    border-color: var(--divider-color);
+    color: var(--primary);
+}
+
+.form-control:hover {
+    border-color: var(--focus-ring);
+}
+
+
+.form-control:focus {
+    border-color: var(--focus-ring);
+    box-shadow: 0 0 0 0.2rem var(--focus-ring);
 }
