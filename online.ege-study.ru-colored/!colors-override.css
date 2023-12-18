@@ -47,6 +47,10 @@ button {
     font-weight: inherit;
 }
 
+label {
+    color: var(--primary);
+}
+
 hr {
     border-top-color: var(--divider-color);
 }
@@ -300,6 +304,15 @@ hr {
     border-radius: 12px;
 }
 
+.card-header:first-child {
+    border-radius: 12px 12px 0 0;
+    border-bottom-color: var(--divider-color);
+}
+
+    .card-header {
+        color: var(--primary);
+    }
+
 
 /* Dropdown */
 
@@ -458,4 +471,23 @@ hr {
 .form-control:focus {
     border-color: var(--focus-ring);
     box-shadow: 0 0 0 0.2rem var(--focus-ring);
+}
+
+
+/* WYSIWYG */
+
+.tox-tinymce {
+    border-color: var(--divider-color);
+}
+
+.tox .tox-statusbar {
+    border-color: var(--divider-color);
+}
+
+.tox .tox-statusbar a, .tox .tox-statusbar__path-item, .tox .tox-statusbar__wordcount {
+    color: var(--text-secondary);
+}
+
+.tox .tox-statusbar a:focus:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar a:hover:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar__path-item:focus:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar__path-item:hover:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar__wordcount:focus:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar__wordcount:hover:not(:disabled):not([aria-disabled=true]) {
+    color: var(--primary);
 }
