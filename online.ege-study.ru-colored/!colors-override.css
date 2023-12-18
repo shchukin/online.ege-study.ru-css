@@ -40,9 +40,30 @@ button {
     color: var(--primary);
 }
 
+.link {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
+    color: var(--accent-link);
+}
 
+.link:hover {
+    text-decoration: underline;
+}
 
 .error {
+    color: var(--danger);
+}
+
+
+.text-primary {
+    color: var(--accent-link);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-danger {
     color: var(--danger);
 }
 
@@ -60,7 +81,6 @@ button {
 }
 
 
-
 .badge-primary {
     background-color: var(--accent-link);
 }
@@ -72,7 +92,6 @@ button {
 .badge-danger {
     background-color: var(--danger);
 }
-
 
 
 .btn-primary {
@@ -99,7 +118,6 @@ button {
     border-color: var(--primary);
     color: #FFFFFF;
 }
-
 
 
 .btn-outline-primary {
@@ -133,8 +151,6 @@ button {
 }
 
 
-
-
 .btn-success {
     background-color: var(--success);
     border-color: var(--success);
@@ -159,7 +175,6 @@ button {
     border-color: var(--primary);
     color: #FFFFFF;
 }
-
 
 
 .btn-outline-success {
@@ -193,7 +208,6 @@ button {
 }
 
 
-
 .btn-danger {
     color: #fff;
     background-color: var(--danger);
@@ -218,7 +232,6 @@ button {
     border-color: var(--primary);
     color: #FFFFFF;
 }
-
 
 
 .btn-outline-danger {
@@ -250,8 +263,6 @@ button {
     border-color: var(--primary);
     color: #FFFFFF;
 }
-
-
 
 
 /* Table */
