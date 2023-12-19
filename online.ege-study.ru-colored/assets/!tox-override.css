@@ -1,0 +1,48 @@
+/* WYSIWYG */
+
+.tox-tinymce {
+    border-color: var(--divider-color);
+}
+
+.tox .tox-tbtn:hover {
+    background-color: var(--secondary-2);
+}
+
+.tox .tox-tbtn--enabled, .tox .tox-tbtn--enabled:hover {
+    background-color: var(--secondary-2);
+}
+
+.tox .tox-collection--toolbar .tox-collection__item--active {
+    background-color: var(--secondary-3);
+}
+
+.tox .tox-tbtn:focus {
+    background-color: var(--secondary-3);
+}
+
+
+.tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active) {
+    background-color: var(--secondary-2);
+}
+
+.tox .tox-mbtn:focus:not(:disabled) {
+    background-color: var(--secondary-2);
+}
+
+
+.tox .tox-mbtn--active {
+    background-color: var(--secondary-3);
+}
+
+
+.tox .tox-statusbar {
+    border-color: var(--divider-color);
+}
+
+.tox .tox-statusbar a, .tox .tox-statusbar__path-item, .tox .tox-statusbar__wordcount {
+    color: var(--text-secondary);
+}
+
+.tox .tox-statusbar a:focus:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar a:hover:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar__path-item:focus:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar__path-item:hover:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar__wordcount:focus:not(:disabled):not([aria-disabled=true]), .tox .tox-statusbar__wordcount:hover:not(:disabled):not([aria-disabled=true]) {
+    color: var(--primary);
+}
